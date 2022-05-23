@@ -1,0 +1,14 @@
+@import '/styles/variables';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    justify-content: center;
+  }
+}

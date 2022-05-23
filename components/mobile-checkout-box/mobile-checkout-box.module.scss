@@ -1,0 +1,65 @@
+@import '/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('/assets/img/bg-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 60%;
+  
+  > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #42515A;
+
+    > h2 {
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+    > img {
+      width: 1.2em;
+      height: 1.2em;
+      margin: 0 1.5em 0.5em 0;
+      cursor: pointer;
+    }
+  }
+
+  > div:last-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10.0em;
+    margin: 0 4.0em;
+    text-align: center;
+
+    img {
+      width: 4.0em;
+      margin: 0.5em;
+      margin: 2.0em auto;
+    }
+    h2 {
+      color: #42515A;
+      font-weight: 500;
+      font-size: 1.25em;
+      margin: 1em
+    }
+    p {
+      margin: 4em 1.5em;
+      line-height: 2em;
+      font-size: 1.0em;
+      color: #000;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+}

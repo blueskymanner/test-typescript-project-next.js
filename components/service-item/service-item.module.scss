@@ -1,0 +1,123 @@
+@import '/styles/variables';
+
+.container {
+  width: 16em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  background-color: white;
+}
+
+.serviceImage {
+  border-radius: 0.5em 0.5em 0 0;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 12em;
+
+  object-fit: cover;
+  transition: all 0.4s ease-out;
+  backdrop-filter: grayscale(30%);
+}
+
+.serviceImage2 {
+  border-radius: 0.5em 0.5em 0 0;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 12em;
+
+  object-fit: cover;
+  transition: all 0.4s ease-out;
+  backdrop-filter: grayscale(30%);
+  display: none;
+}
+
+.serviceImageBar {
+  background-color: $primary-bg-color;
+  width: 50%;
+  height: 0.3em;
+  border-radius: 2px;
+  margin: auto;
+  position: relative;
+  margin-top: -0.15em;
+}
+
+.serviceImageText {
+  margin: auto;
+  color: white;
+  position: relative;
+  margin-top: -2.0em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.serviceBody {
+  padding: 1.0em;
+}
+
+.serviceText {
+  text-align: center;
+  font-size: 0.75em;
+  margin: 1.2em 0;
+  color: #444;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 20em;
+  }
+
+  .serviceImage {
+    height: 15em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    background-color: white;
+    border-radius: 1.5em;
+    box-shadow: $thirdary-box-shadow;
+    position: relative;
+    margin: -1.5em 0 10em 0;
+  }
+
+  .serviceImage {
+    display: none;
+  }
+
+  .serviceImage2 {
+    display: block;
+    width: 8.0em;
+    height: 8.0em;
+    margin: auto;
+    margin-top: -4.0em;
+    border-radius: 4.0em;
+    border: 2px solid white;
+  }
+
+  .serviceImageBar {
+    display: none;
+  }
+
+  .serviceImageText {
+    margin-top: 0;
+    padding: 1.0em 0;
+    font-size: 1.5em;
+    color: $primary-text-color;
+  }
+
+  .serviceBody {
+    padding: 0;
+  }
+
+  .serviceText {
+    font-size: 1.0em;
+    margin: 0;
+    padding: 1.0em 0;
+    color: #666;
+    border-top: 1px solid #a2a2a2;
+  }
+}

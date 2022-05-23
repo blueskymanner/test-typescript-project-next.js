@@ -1,0 +1,27 @@
+@import '/styles/variables';
+
+.container {
+  background: $primary-gradient;
+
+  p {
+    margin: 0;
+    padding: 1.75em 3.0em;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    p {
+      font-size: 1.0em;
+      font-weight: 300;
+    }
+  }
+}

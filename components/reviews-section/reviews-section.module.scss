@@ -1,0 +1,62 @@
+@import '/styles/variables';
+
+.container {
+  background-color: white;
+  padding: 4em 0;
+
+  .summary {
+    margin-bottom: 3em;
+
+    > p {
+      text-align: center;
+      margin: 0;
+  
+      font-weight: 400;
+      font-size: 0.9em;
+  
+      color: #666;
+    }
+
+    p:nth-child(2) {
+      display: none;
+    }
+
+    > h2 {
+      text-align: center;
+      margin: 0;
+  
+      font-weight: 500;
+      font-size: 2.0em;
+  
+      color: $primary-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-bottom: 3.0em;
+    background: $primary-gradient;
+    color: white;
+    
+    .summary {
+      > p {
+        color: white;
+        font-weight: 300;
+      }
+      h2 {
+        color: white;
+        margin: 0.5em 1.0em;
+      }
+      p:nth-child(2) {
+        display: block;
+      }
+      p:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '/styles/variables';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.0em;
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: #eee;
+    margin-top: 8.0em;
+    margin-bottom: -8.0em;
+  }
+}

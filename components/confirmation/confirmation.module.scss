@@ -1,0 +1,107 @@
+@import '/styles/variables';
+
+.container {
+  padding: 1.0em 0;
+  background-position: 30%;
+  background-image: url('/assets/img/bg-logo.png');
+  background-size: contain;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+
+  .wrapper {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 12em);
+    min-height: 43em;
+    max-height: 50em;
+
+    h2 {
+      margin-bottom: 1.0em;
+      font-weight: 500;
+      font-size: 1.75em;  
+      color: #444;
+    }
+    h3 {
+      margin: 0 0 1.5em 0;
+      font-size: 1.2em;
+      font-weight: 500;
+      color: #444;
+    }
+    h3:nth-child(7) {
+      margin: 0;
+    }
+    h4 {
+      margin: 0.5em 0;
+      font-size: 1.0em;
+      font-weight: 500;
+      color: #555;
+    }
+    > div {
+      margin: 2em 0;
+      width: 40%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      
+      p {
+        margin: 0.4em;
+        font-size: 0.8em;
+        font-weight: 500;
+        color: #444;
+        text-align: center;
+      }
+      div {
+        h4:first-child {
+          margin: 0;
+          font-weight: 500;
+          font-size: 1.0em;
+          color: #555;
+        }
+        h4:last-child {
+          text-align: right;
+          margin: 0;
+          font-weight: 500;
+          font-size: 0.64em;
+          color: #555;
+        }
+      }
+    }
+    > p {
+      margin: 0;
+      font-size: 0.7em;
+      font-weight: 500;
+      color: #888;
+
+      span {
+        color: $primary-text-color;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    .wrapper {
+      height: calc(100vh - 13em);
+      min-height: 36em;
+      max-height: 50em;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    .wrapper {
+      height: calc(100vh - 12em);
+      min-height: 35em;
+      max-height: 50em;
+    }
+  }
+}

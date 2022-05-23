@@ -1,0 +1,56 @@
+@import '/styles/variables';
+
+.container {
+  padding: 2.0em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1.5em;
+  color: white;
+  max-width: 38em;
+
+  h2 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 1.2;
+    text-shadow: 2px 2px 2px #222;
+
+    span {
+      color: $primary-text-color;
+    }
+  }
+  p {
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  div {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    div {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 1.5em 1.2em;
+    border-radius: 0;
+    position: relative;
+    top: 4.0em;
+    max-width: 50em;
+
+    h2 {
+      font-size: 2.0em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    div {
+      display: block;
+    }
+  }
+}

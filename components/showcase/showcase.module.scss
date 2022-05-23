@@ -1,0 +1,88 @@
+@import '/styles/variables';
+
+.container {
+  background-image: url("/assets/img/bg-showcase.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: 30%;
+  height: calc(100vh - 12em);
+  min-height: 43em;
+  max-height: 50em;
+
+  .wrapper {
+    display: flex;
+    padding: 2.0em 0;
+
+    > div:first-child {
+      width: 56%;
+      padding: 0.5em 1.0em 0.5em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    > div:last-child {
+      width: 44%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding: 0.5em 0 0.5em 1.0em;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    background-position: 30%;
+    height: calc(100vh - 13em);
+    min-height: 36em;
+    max-height: 50em;
+
+    .wrapper {
+      flex-wrap: wrap;
+      padding: 0.75em 0;
+  
+      > div:first-child {
+        width: 100%;
+        align-items: center;
+      }
+      > div:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    background-position: 30%;
+    height: calc(100vh - 12em);
+    min-height: 35em;
+    max-height: 50em;
+
+    .wrapper {
+      flex-wrap: wrap;
+      padding: 0;
+  
+      > div:first-child {
+        width: 100%;
+        padding: 0;
+      }
+      > div:last-child {
+        display: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    height: calc(100vh - 10em);
+  }
+}

@@ -1,0 +1,29 @@
+@import '/styles/variables';
+
+.container {
+  width: 20%;
+  padding: 1.0em;
+  text-align: center;
+
+  h3 {
+    font-weight: 300;
+    white-space: pre-line;
+
+  }
+  img {
+    transition: all 0.4s ease-out;
+    height: 3.0em;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}

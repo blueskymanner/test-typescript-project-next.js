@@ -1,0 +1,47 @@
+@import "/styles/variables";
+
+.container {
+  text-align: left;
+  p:first-child {
+    margin: 0 0 0 1.5em;
+    font-size: 0.6em;
+    color: #444;
+  }
+  div {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-family: Poppins;
+      font-size: 0.9em;
+      font-weight: 500;
+      color: #444;
+  
+      &::placeholder {
+        color: #a2a2a2;
+        font-weight: 400;
+      }
+    }
+  }
+  p:last-child {
+    text-align: right;
+    margin: 0;
+    margin-right: 0.5em;
+    font-size: 0.5em;
+    color: $primary-color;
+  }
+
+  img {
+    width: 1.25em;
+    margin: 0 0.25em 0 0.5em;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+}

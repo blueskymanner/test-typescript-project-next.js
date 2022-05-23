@@ -1,0 +1,14 @@
+@import '/styles/variables';
+
+.container {
+  background: $primary-gradient;
+  padding: 3.0em 0;
+  box-shadow: $primary-box-shadow;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 6.0em 0 3.0em 0;
+    text-align: center;
+  }
+}

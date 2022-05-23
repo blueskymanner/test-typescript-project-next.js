@@ -1,0 +1,67 @@
+@import '/styles/variables';
+
+.container {
+  background-image: url('/assets/img/bg-logo.png');
+  background-size: contain;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+
+  .wrapper {
+    height: calc(100vh - 12em);
+    min-height: 43em;
+    max-height: 50em;
+    margin: auto;
+    padding-bottom: 5.0em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 4.0em;
+      margin: 0.5em;
+    }
+    h2 {
+      color: #666;
+      font-weight: 500;
+      font-size: 1.25em;
+      margin: 1em
+    }
+    p {
+      margin: 4em 0;
+      font-size: 0.8em;
+      color: #444;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    .wrapper {
+      height: calc(100vh - 13em);
+      min-height: 36em;
+      max-height: 50em;
+      padding-bottom: 3.0em;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-bottom: 6.5em;
+
+    .wrapper {
+      height: calc(100vh - 12em);
+      min-height: 35em;
+      max-height: 50em;
+    }
+    h2 {
+      margin-bottom: -0.8em;
+      text-align: center;
+      font-size: 1.75em;
+    }
+  }
+}

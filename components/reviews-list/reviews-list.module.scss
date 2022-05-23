@@ -1,0 +1,17 @@
+@import '/styles/variables';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}

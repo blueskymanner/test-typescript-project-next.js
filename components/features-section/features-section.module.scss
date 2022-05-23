@@ -1,0 +1,40 @@
+@import '/styles/variables';
+
+.container {
+  padding: 3.0em 0;
+
+  .summary {
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      font-size: 1.0em;
+      font-weight: 500;
+      color: #666;
+    }
+    h3 {
+      margin: 0;
+      font-size: 2.4em;
+      font-weight: 500;
+      color: $primary-text-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 3.0em 1.0em;
+
+    .summary {
+      h3 {
+        margin: 0;
+        font-size: 1.75em;
+        font-weight: 500;
+        color: $primary-text-color;
+      }
+    }
+  }
+}

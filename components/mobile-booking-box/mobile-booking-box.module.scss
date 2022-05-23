@@ -1,0 +1,75 @@
+@import "/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-text-color;
+    color: white;
+    > img {
+      width: 1.2em;
+      height: 1.2em;
+      margin: 0 1.0em;
+      cursor: pointer;
+    }
+  }
+  > div:last-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 1.0em;
+    background-color: white;
+    padding: 2.0em;
+    color: #444;
+
+    > h2 {
+      margin: 0;
+      color: #888;
+      font-weight: 600;
+    }
+    > h3 {
+      margin: 0;
+      color: $primary-text-color;
+    }
+    > p {
+      padding: 0 1em;
+      color: #888;
+      font-size: 0.5em;
+
+      strong {
+        font-weight: 500;
+        color: $primary-text-color;
+      }
+    }
+
+    .indicators {
+      display: flex;
+      justify-content: center;
+      margin: 1.0em 0;
+    }
+    
+    .indicators > button {
+      margin: 0.5em;
+      width: 1.0em;
+      height: 1.0em;
+      border-radius: 0.5em;
+      border: none;
+    }
+    
+    .indicators > button.active {
+      background-color: #EA6061;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 768px) {
+}

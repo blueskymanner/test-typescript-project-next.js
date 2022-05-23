@@ -1,0 +1,27 @@
+@import '/styles/variables';
+
+.container {
+  background: linear-gradient(132.45deg, #F88A69 13.98%, #F4444E 100.83%);;
+  padding: 5em 0;
+  box-shadow: $secondary-box-shadow;
+  text-align: center;
+  color: white;
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.9em;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.0em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 3em 0;
+  }
+}

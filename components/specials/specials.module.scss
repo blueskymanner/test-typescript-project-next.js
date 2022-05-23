@@ -1,0 +1,51 @@
+@import '/styles/variables';
+
+.container {
+  background-image: url('/assets/img/Rectangle 23.png');
+  background-size: cover;
+  color: white;
+  padding: 2.5em 0;
+
+  .summary {
+    text-align: center;
+  }
+  div > p {
+    text-align: center;
+    margin: 1.0em 0;
+    font-weight: 300;
+    font-size: 0.8em;
+
+    br {
+      display: none;
+    }
+  }
+  div > h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.0em;
+
+    br:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    div > h2 {
+      br:nth-child(1) {
+        display: none;
+      }
+      br:nth-child(3) {
+        display: inline;
+      }
+    }
+    div > p {
+      font-size: 0.9em;
+      br {
+        display: inline;
+      }
+    }
+  }
+}

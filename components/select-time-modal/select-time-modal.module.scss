@@ -1,0 +1,85 @@
+@import "/styles/variables";
+
+.container {
+  > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-text-color;
+    color: white;
+    > img {
+      width: 1.2em;
+      height: 1.2em;
+      margin: 0 1.0em;
+      cursor: pointer;
+    }
+  }
+  > div:last-child {
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECEC;
+
+    > h3 {
+      color: #888;
+      font-size: 1.2em;
+      font-weight: 500;
+      text-align: center;
+      margin: 0.75em auto;
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em 2em;
+      background-color: white;
+      border: 1px solid #ccc;
+
+      > div:first-child {
+        p:first-child {
+          font-size: 1.0em;
+          font-weight: 500;
+          color: #444;
+          margin: 0.5em 0 0 0;
+
+          > sup {
+            display: inline-block;
+            margin: 0 0 0 0.5em;
+            font-weight: 500;
+            padding: 0.25em 1.0em;
+            font-size: 0.65em;
+            color: white;
+            background: $secondary-gradient;
+            border-radius: 2em;
+          }
+        }
+        p:last-child {
+          margin: 0;
+          font-weight: 400;
+        }
+      }
+      > div:last-child {
+        display: flex;
+        align-items: center;
+
+        > p {
+          font-weight: 600;
+          margin: 0 0.5em;
+          font-size: 1.2em;
+          line-height: 1.0;
+          color: $primary-text-color;
+
+          span {
+            font-weight: 600;
+            font-size: 0.75em;
+            color: #222;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+}

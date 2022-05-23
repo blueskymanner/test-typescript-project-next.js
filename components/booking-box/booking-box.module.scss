@@ -1,0 +1,46 @@
+@import "/styles/variables";
+
+.container {
+  width: 27em;
+  text-align: center;
+  border-radius: 1.0em;
+  background-color: white;
+  padding: 2.0em 2.0em 1.0em 2.0em;
+  color: #444;
+
+  > h2 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: $thirdary-text-color;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+  }
+  > h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: $primary-text-color;
+  }
+  > p {
+    padding: 0 1em;
+    color: #888;
+    font-size: 0.5em;
+
+    strong {
+      font-weight: 500;
+      color: $primary-text-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
