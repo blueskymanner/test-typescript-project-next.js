@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Poppins;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@font-face {
+  font-family: "Druk Wide Web Bold Regular";
+  src: url("/assets/font/Druk Wide Web Bold Regular/Druk Wide Web Bold Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neu Bold";
+  src: url("/assets/font/Helvetica Neu Bold/Helvetica Neu Bold.ttf");
+  font-display: swap;
+}
